@@ -113,8 +113,68 @@ document.write("<h2>Total currency in PKR : " + ((10 * 104) + (25 * 28)) + "</h2
 
 // Exercise # 10
 
-var calcNumber = 12;
+var calcNumber = -2.6666666666666666666;
 
 alert(((calcNumber + 5) * 10) / 2);
 
+// Exercise # 11
 
+var currentYear = 2015;
+var birthYear = 1992;
+
+document.write("<h1>The Age Calculator</h1>\n\n");
+document.write("<h2>Current Year : " + currentYear + "</h2>\n");
+document.write("<h2>Birth Year : " + birthYear + "</h2>\n\n");
+document.write("<h2>They are either " +  (currentYear-birthYear) + " or " + ((currentYear-birthYear) + 1) + " years old</h2>\n");
+
+// Exercise # 12
+
+var radius = 12;
+
+document.write("<h1>The Geometrizer</h1>\n\n");
+document.write("<h2>Radius of a circller : " + radius + "</h2>\n");
+document.write("<h2>The circumference is : " + (2 * 3.142 * radius) + "</h2>\n\n");
+document.write("<h2>The area is : " + (3.142 * Math.pow(radius, 2))  + "</h2>\n");
+
+
+// Exercise # 13
+
+var a = parseInt(prompt("Please enter a number"));
+
+document.write("<br /><br /><h2>Result:</h2>\n");
+document.write("<h2>The value of a is: " + a + "</h2>\n");
+document.write("<h2>-------------------------</h2>\n\n");
+
+document.write("<h2>The value of ++a is: " + ++a + "</h2>\n");
+document.write("<h2>Now the value of a is: " + a + "</h2>\n\n");
+
+document.write("<h2>The value of a++ is: " + a++ + "</h2>\n");
+document.write("<h2>Now the value of a is: " + a + "</h2>\n\n");
+
+document.write("<h2>The value of --a is: " + --a + "</h2>\n");
+document.write("<h2>Now the value of a is: " + a + "</h2>\n\n");
+
+document.write("<h2>The value of a-- is: " + a-- + "</h2>\n");
+document.write("<h2>Now the value of a is: " + a + "</h2>\n\n");
+
+// Exercise # 14
+
+var a1 = 2, b1 = 1;
+var result1 = --a1 - --b1 + ++b1 + b1--;
+
+document.write("<br /><br /><h2>a is: " + a1 +"</h2>\n");
+document.write("<h2>b is: " + b1 + "</h2>\n");
+document.write("<h2>result is: " + result1 + "</h2>\n\n");
+
+
+// Exercise # 15
+
+var favSnack = "Oreo biscuits", currentAge = 15, maxAge = 85, snackPerDay = 2;
+
+document.write("<br /><br /><h1>The Lifetime Supply Calculator</h1>\n");
+document.write("<br /><br /><h2>Favorite Snack : " + favSnack + "</h2>\n");
+document.write("<h2>Current Age : " + currentAge + "</h2>\n");
+document.write("<h2>Estimated Maximum Age : " + maxAge + "</h2>\n");
+document.write("<h2>Amount of snacks per day : " + snackPerDay + "</h2>\n");
+
+document.write("<br /><h2>You will need " + ((maxAge-currentAge)* snackPerDay) + " " + favSnack + " to last you untill the ripe old age of " + maxAge + "</h2>\n\n");
